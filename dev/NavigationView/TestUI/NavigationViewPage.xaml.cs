@@ -726,5 +726,10 @@ namespace MUXControlsTestApp
 
             SettingsSelectedState.Text = (settings as NavigationViewItem).IsSelected.ToString();
         }
+        private async void ContentDialogNavViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogWithNavView dialog = new DialogWithNavView();
+            await dialog.ShowAsync();
+        }
     }
 }
